@@ -1,0 +1,23 @@
+export type Widget = {
+    clientId: string,
+    clientName: string,
+    code: string,
+    defalutProperty: string,
+    description: string,
+    enlarge: boolean,
+    enabled: boolean,
+    height: number,
+    id: number,
+    image: string,
+    location: string,
+    minHeight: number,
+    minWidth: number,
+    name: string,
+    packageName: string,
+    preference: boolean,
+    property: string,
+    resize: boolean,
+    type: string,
+    width: number,
+    widgetId: number
+}

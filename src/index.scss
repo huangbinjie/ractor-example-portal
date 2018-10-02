@@ -1,0 +1,42 @@
+
+// 消息提示组件(message)样式重写
+:global(.ant-message-custom-content) {
+  position: relative;
+
+  &:before {
+      content: " ";
+      position: absolute;
+      left: -16px;
+      right: -16px;
+      top: -10px;
+      bottom: -10px;
+      border-radius: 4px;
+  }
+
+  > span {
+      position: relative;
+  }
+
+  &:global(.ant-message-success) {
+      &:before {
+          background: rgba(246, 255, 237, 1);
+      }
+  }
+
+  &:global(.ant-message-error) {
+      &:before {
+          background: rgba(255, 241, 240, 1);
+      }
+  }
+
+  &:global(.ant-message-info) {
+      :global(.anticon) {
+          color: #FCC700;
+      }
+
+      &:before {
+          background: rgba(255, 251, 230, 1);
+      }
+  }
+
+}
